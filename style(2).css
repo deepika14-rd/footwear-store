@@ -1,0 +1,282 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #8F87F1, #C68EFD);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-links .login-btn {
+    background: #FFD700;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links .login-btn:hover {
+    background: #FFC107;
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+}
+
+.hero-content {
+    width: 50%;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #FFD700;
+    color: black;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #FFC107;
+    transform: scale(1.1);
+}
+
+/* Hero Image - Increased Size */
+.hero-image img {
+    width: 80%; /* Increased width */
+    height: auto;
+    border-radius: 50px 0px 50px 0px;
+}
+
+/* Reduce Space Between Sections */
+.product-section {
+    margin-top: -30px;
+    text-align: center;
+}
+
+.product-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Products Grid */
+.shop-grid,.women-grid,.children-grid,.men-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 30px;
+    justify-items: center;
+}
+
+.product {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.product p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.product:hover {
+    transform: scale(1.1);
+}
+
+/* Login Popup */
+.login-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login Box - Increased Size */
+.login-box {
+    background: url('login-bg.jpg') center/cover;
+    padding: 60px; /* Increased padding */
+    width: 500px; /* Increased width */
+    text-align: center;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    position: relative; /* For positioning the close button */
+}
+
+/* Close Button (X) Positioned at Top Right */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+}
+
+/* Login Input Fields */
+.login-box input {
+    width: 90%;
+    margin: 15px 0;
+    padding: 14px;
+    font-size: 18px;
+    border: 2px solid #8F87F1;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.login-box input::placeholder {
+    color: #fff;
+}
+
+/* Login Submit Button */
+.login-submit {
+    width: 100%;
+    padding: 14px;
+    background: #FFD700;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.login-submit:hover {
+    background: #FFC107;
+    transform: scale(1.05);
+}
+
+/* Signup & Forgot Password */
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.signup {
+    color: #C68EFD;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.forgot-password {
+    color: #8F87F1;
+    font-style: italic;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 40px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}

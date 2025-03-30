@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Store - Home</title>
+    <link rel="stylesheet" href="style(2).css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>H<span>B</span></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="men.html">Men</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="children.html">Children</a></li>
+                <li><a href="#" id="login-btn" class="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 style="font-size: 70px; font-style: italic;">Step into Comfort & Style</h1>
+            <p style="size: 200px;font-style: oblique;">Discover our latest collection of premium footwear designed for elegance and durability.</p>
+            <a href="shop.html" class="btn">Shop Now</a>
+        </div>
+        <div class="hero-image">
+            <img src="shoe(5).jpg" alt="Stylish Shoes">
+        </div>
+    </section>
+
+    <!-- Featured Collection -->
+    <section class="product-section">
+        <h2>Explore Our Latest Collection</h2>
+        <div class="shop-grid">
+            <!-- 15 Product Boxes -->
+            <div class="product"><img src="common.jpg" alt=""><p>$49.99</p></div>
+            <div class="product"><img src="common.jpg" alt=""><p>$49.99</p></div>
+            <div class="product"><img src="common.jpg" alt=""><p>$49.99</p></div>
+            <div class="product"><img src="common.jpg" alt=""><p>$49.99</p></div>
+            <div class="product"><img src="common.jpg" alt=""><p>$49.99</p></div>
+            <div class="product"><img src="common.jpg" alt=""><p>$49.99</p></div>
+            <div class="product"><img src="common.jpg" alt=""><p>$49.99</p></div>
+            <div class="product"><img src="common.jpg" alt=""><p>$49.99</p></div>
+            <div class="product"><img src="common.jpg" alt=""><p>$49.99</p></div>
+            <div class="product"><img src="common.jpg" alt=""><p>$49.99</p></div>
+            <div class="product"><img src="common.jpg" alt=""><p>$49.99</p></div>
+            <div class="product"><img src="common.jpg" alt=""><p>$49.99</p></div>
+            <div class="product"><img src="common.jpg" alt=""><p>$49.99</p></div>
+            <div class="product"><img src="common.jpg" alt=""><p>$49.99</p></div>
+            <div class="product"><img src="common.jpg" alt=""><p>$49.99</p></div>
+        </div>
+    </section>
+
+    <!-- Login Popup -->
+    <div class="login-popup" id="login-popup">
+        <div class="login-box">
+            <span class="close-btn" id="close-btn">&times;</span>
+            <h2>Welcome Back!</h2>
+            <form>
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="login-submit">Login</button>
+                <div class="login-options">
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                    <a href="#" class="signup">Sign Up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Help & FAQs</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 ShoeStyle. All rights reserved. || Designed by Deepika</p>
+    </footer>
+
+    <script>
+        // Open Login Popup
+        document.getElementById("login-btn").addEventListener("click", function() {
+            document.getElementById("login-popup").style.display = "flex";
+        });
+
+        // Close Login Popup
+        document.getElementById("close-btn").addEventListener("click", function() {
+            document.getElementById("login-popup").style.display = "none";
+        });
+    </script>
+
+</body>
+</html>
