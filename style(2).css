@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #8F87F1, #C68EFD);
+    background: linear-gradient(to right, #006A71, #ACD3A8);
     color: #fff;
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(0, 0, 0, 0.8);
+    background: #006A71;
     padding: 15px 50px;
 }
 
@@ -186,7 +186,7 @@ body {
     margin: 15px 0;
     padding: 14px;
     font-size: 18px;
-    border: 2px solid #8F87F1;
+    border: 2px solid #94bdf7;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
@@ -223,7 +223,7 @@ body {
 }
 
 .signup {
-    color: #C68EFD;
+    color: #94bdf7;
     font-weight: bold;
     font-size: 16px;
 }
@@ -236,7 +236,7 @@ body {
 
 /* Footer */
 footer {
-    background: rgba(0, 0, 0, 0.9);
+    background: #006A71;
     padding: 40px;
     text-align: center;
     margin-top: 40px;
